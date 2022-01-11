@@ -44,6 +44,10 @@ Global Css
     color: var(--color-4);    
 
 }
+.btnstyle-1-white{
+    background: var(--color-4);
+    color: var(--color-2);
+}
 /*---------------------------------------------------------------------
 Header
 ---------------------------------------------------------------------*/
@@ -125,8 +129,11 @@ Dekstop Nav
     background: var(--color-1);
     transition: all 300ms;
 }
-.dekstopnav .dekstopnavcol .nav-list > ul li.active a:hover::before{
+.dekstopnav .dekstopnavcol .nav-list > ul li.active a::before{
     background: var(--color-2);
+}
+.dekstopnav .dekstopnavcol .nav-list > ul li.active a{
+    color: var(--color-2);
 }
 .dekstopnav .dekstopnavcol .nav-list > ul li a:hover{
     color: var(--color-2);
@@ -138,22 +145,21 @@ Dekstop Nav
     background: #FFFFFF;
     border-radius: 0px 0px 5px 5px;
     border-top: 4px solid var(--color-2);
-    width: 0;
-    height: 0;
+    width: 200px;
+    height: auto;
     z-index: 1000;
     padding: 14px;
     visibility: hidden;
     opacity: 0;
-    transform: translate(-10px,-10px);
     transition: all 500ms;
     overflow:hidden;
+    transform: translateY(-10px);
 }
 .dekstopnav .dekstopnavcol .nav-list > ul li.downmenu:hover .downmenuopen{
     visibility: visible;
     opacity: 1;
-    transform: translate(0,0);
-    width: 200px;
-    height: auto;
+    transform: translateY(0);
+
 }
 .dekstopnav .dekstopnavcol .nav-list > ul li.downmenu .downmenuopen ul{
     margin: 0;
@@ -181,4 +187,159 @@ Dekstop Nav
 }
 .dekstopnav .dekstopnavcol .nav-list > ul li.downmenu .downmenuopen ul li a i{
     margin-right: 8px;
+}
+/*---------------------------------------------------------------------
+Main
+---------------------------------------------------------------------*/
+/*---------------------------------------------------------------------
+Banner Main
+---------------------------------------------------------------------*/
+.banner{
+    position: relative;
+}
+.bannermaincon{
+    height: 425px;
+    position: relative;
+}
+.bannermaincon .row,
+.bannermaincon .row .col-12,
+.bannermaincon .owl-carousel,
+.bannermaincon .owl-carousel .owl-stage-outer,
+.bannermaincon .owl-carousel div{
+    height: 100%;
+}
+.bannermaincon .owl-carousel div.owl-dots{
+    height: auto;
+}
+.bannermaincon .owl-carousel img{
+    width: 100%;
+    height: 100%;
+}
+.bannermaincon .owl-carousel .owl-dots{
+    position: absolute;
+    bottom: 17%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.bannermaincon .owl-carousel .owl-dots .owl-dot span{
+    width: 46px;
+height: 2px;
+    background: rgba(255, 255, 255, 0.5);
+border-radius: 53px;
+margin: 0 4px;
+}
+.bannermaincon .owl-carousel .owl-dots .owl-dot.active span{
+    background: var(--color-4);
+}
+.bannermaincon .owl-theme .owl-nav{
+    display: none;
+}
+
+.banner .bannermaincon .bannertext{
+    position: absolute;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 100;
+}
+.banner .bannermaincon .bannertext h1{
+    margin: 0;
+    padding: 0;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 60px;
+    line-height: 100%;
+    /* or 60px */
+
+    text-align: center;
+
+    color: var(--color-4);
+    width: 747px;
+}
+.banner .bannermaincon .bannertext p{
+    margin: 8px 0;
+    padding: 0;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+
+    color: #F2F2F2;
+}
+.banner .bannermaincon .bannertext .buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.banner .bannermaincon .bannertext .buttons a{
+    margin: 0 7.5px;
+}
+/*---------------------------------------------------------------------
+Story
+---------------------------------------------------------------------*/
+.banner .story{
+    position: absolute;
+    width: 731px;
+    height: 170px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: -30%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--color-4);
+    box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    z-index: 100;
+}
+.banner .story .content ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.banner .story .content ul li{
+    cursor: pointer;
+    margin: 0 6px;
+}
+.banner .story .content ul li .top{
+    position: relative;
+    overflow: hidden;
+    padding: 4px;
+    border: 2px solid var(--color-2);
+    border-radius: 50%;
+}
+.banner .story .content ul li .top .content{
+    position: relative;
+    overflow: hidden;
+    width: 87px;
+    height: 86px;
+    border-radius: 50%;
+}
+.banner .story .content ul li .top .content::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.banner .story .content ul li .top svg{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.banner .story .content ul li .text p{
+    text-align: center;
+    margin: 0;
 }
