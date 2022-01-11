@@ -55,6 +55,14 @@ Global Css
     align-items: center;
     justify-content: center;
 }
+.sectiontitle .content {
+    position: relative;
+}
+.sectiontitle .content .bgicon{
+    position: absolute;
+    top: -10%;
+    left: -20%;
+}
 .sectiontitle p.first{
     margin: 0;
     padding: 0;
@@ -499,6 +507,7 @@ About
 .about{
     position: relative;
     padding: 85px 0 100px 0;
+    background-image: url(../img/AboutUsBg.png);
 }
 .about .sectiontitle{
     margin-bottom: 50px;
