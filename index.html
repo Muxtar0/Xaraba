@@ -262,6 +262,44 @@
                 <!-- Story end -->
             </section>
             <!-- Banner Section end -->
+
+            <!-- Services Section start -->
+            <section class="services">
+                <div class="container-fluid servicescon g-0">
+                    <div class="row">
+                        <div class="col-12 sectiontitle">
+                            <div class="content">
+                                <p class="first">What We Offer</p>
+                                <h3>Our Services</h3>
+                                <p class="second">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna.  </p>
+                            </div>
+                        </div>
+                        <div class="col-12 slidercol">
+                            <div class="owl-carousel servicesslider owl-theme">
+                                <div class="item">
+                                    <div class="content">
+                                        <div class="imgdiv">
+                                            <img src="assets/img/ServicePhoto1.png" alt="">
+                                            <img class="linearcoloforserviceslide" src="assets/img/ServideSlideLinearColor.png" alt="">
+                                        </div>
+                                        <div class="textdiv">
+                                            <div class="left">
+                                                <h3>Repair Furniture</h3>
+                                                <p>Lorem ipsum dolor sit amet, consectetur  </p>
+                                            </div>
+                                            <div class="right">
+                                                <a href="#"><i class="fas fa-angle-right"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Services Section end -->
+
     </main>
     <!-- Main end -->
 
@@ -289,6 +327,22 @@
                 },
                 1000:{
                     items:1,
+                }
+            }
+        })
+        $('.servicesslider').owlCarousel({
+            loop:true,
+            margin:0,
+            nav:true,
+            responsive:{
+                0:{
+                    items:1
+                },
+                600:{
+                    items:2
+                },
+                1000:{
+                    items:3
                 }
             }
         })

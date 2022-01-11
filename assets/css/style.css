@@ -48,6 +48,52 @@ Global Css
     background: var(--color-4);
     color: var(--color-2);
 }
+
+.sectiontitle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sectiontitle p.first{
+    margin: 0;
+    padding: 0;
+    font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 100%;
+/* identical to box height, or 16px */
+
+text-align: center;
+
+color: var(--color-2);
+}
+.sectiontitle h3{
+    margin:10px  0;
+    padding: 0;
+    font-style: normal;
+font-weight: 500;
+font-size: 40px;
+line-height: 100%;
+/* identical to box height, or 40px */
+
+text-align: center;
+
+color: var(--color-1);
+}
+.sectiontitle p.second{
+    margin: 0;
+    padding: 0;
+    width: 507px;
+    font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 30px;
+/* or 187% */
+
+text-align: center;
+
+color: var(--color-1);
+}
 /*---------------------------------------------------------------------
 Header
 ---------------------------------------------------------------------*/
@@ -342,4 +388,85 @@ Story
 .banner .story .content ul li .text p{
     text-align: center;
     margin: 0;
+}
+/*---------------------------------------------------------------------
+Services
+---------------------------------------------------------------------*/
+.services{
+    margin-top: 200px;
+}
+.services .slidercol{
+    margin-top: 67px;
+}
+.services .slidercol .item .imgdiv{
+    position: relative;
+    width: 100%;
+}
+.services .slidercol .item .imgdiv img.linearcoloforserviceslide{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.services .slidercol .item .imgdiv img{
+    width: 100%;
+    height: 100%;
+}
+.services .slidercol .item .textdiv{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 28px 24px;
+}
+.services .slidercol .item .textdiv .left h3{
+    margin: 0;
+    padding: 0;
+    font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 24px;
+/* identical to box height */
+
+
+color: var(--color-4);
+}
+.services .slidercol .item .textdiv .left p{
+    margin: 0;
+    padding: 0;
+    font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 17px;
+
+color: var(--color-4);
+}
+.services .slidercol .item .textdiv .right a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 39px;
+height: 39px;
+    background: transparent;
+    color: var(--color-4);
+    border: 0.7px solid rgba(255, 255, 255, 0.5);
+box-sizing: border-box;
+transition: all 300ms;
+}
+.services .slidercol .item .textdiv .right a:hover{
+    background: var(--color-4);
+    border-color: var(--color-4);
+    color: var(--color-2);
+}
+@media (max-width:992px) {
+    header .dekstopnav{
+        display: none;
+    }
+}
+@media (max-width:600px) {
+    .sectiontitle p.second{
+        width: 100%;
+    }
 }
