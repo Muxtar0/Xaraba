@@ -11,6 +11,9 @@ Reset Css
     text-decoration: none !important;
     font-family: 'Rubik', sans-serif;
 }
+img{
+    object-fit: cover;
+}
 body,html{
     width: 100%;
     overflow-x: hidden;
@@ -232,6 +235,120 @@ color: var(--color-1);
 z-index: 100;
 
 }
+.banner2{
+    height: 303px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.banner2::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--color-3);
+    opacity: .4;
+}
+.banner2 h3{
+    margin: 0;
+    padding: 0;
+    font-style: normal;
+font-weight: 500;
+font-size: 60px;
+line-height: 100%;
+/* identical to box height, or 60px */
+
+text-align: center;
+
+color: var(--color-4);
+z-index: 100;
+}
+.banner2 p{
+    margin: 0;
+    padding: 0;
+    margin-top: 15px;
+    font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 19px;
+text-align: center;
+
+color: #F2F2F2;
+z-index: 100;
+position: relative;
+}
+.banner2 p span{
+    visibility: hidden;
+    opacity: 0;
+}
+.banner2 p::before{
+    content: "";
+    position: absolute;
+    left: 60px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 6px;
+height: 6px;
+background: var(--color-4);
+border-radius: 50%;
+}
+/*---------------------------------------------------------------------
+Video Popup
+---------------------------------------------------------------------*/
+.videopoup{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    visibility: hidden;
+    opacity: 0;
+}
+.videopoup.active{
+    visibility: visible;
+    opacity: 1;
+}
+.videopoup .closevideodiv{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    opacity: .5;
+    z-index: -1;
+}
+.videopoup .closebtndiv{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.videopoup .closebtndiv button{
+    background: none;
+    border: none;
+    color: white;
+    font-size: 40px;
+    padding-right: 10px;
+}
+.videopoup .videodiv{
+    width: 90%;
+    height: 80%;
+    margin: auto;
+    object-fit: cover;
+    object-position: center;
+} 
+.videopoup .videodiv video{
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+}
 /*---------------------------------------------------------------------
 Header
 ---------------------------------------------------------------------*/
@@ -398,6 +515,7 @@ Banner Main
 .bannermaincon .owl-carousel img{
     width: 100%;
     height: 100%;
+    object-fit: cover;
 }
 .bannermaincon .owl-carousel .owl-dots{
     position: absolute;
@@ -929,6 +1047,7 @@ cursor: pointer;
     width: 100%;
     height: 100%;
     border-radius: 10px;
+    object-fit: cover;
 }
 .projects .itemsdiv .item .imgdiv img.bglinear{
     position: absolute;
@@ -1129,7 +1248,7 @@ text-align: center;
 color: var(--color-2);
 }
 .teammanagement .teammemmberdiv .textdiv .socialmedias{
-    margin-top: 10px;
+    margin-top: 40px;
 }
 .teammanagement .teammemmberdiv .textdiv .socialmedias ul{
     margin: 0;
@@ -1308,7 +1427,7 @@ Latest New
     margin-top: 15px;
 }
 .latestnew .content{
-    max-width: 323px;
+    width: 100%;
     background: var(--color-4);
 box-shadow: 0px 3.85271px 15.4109px rgba(0, 0, 0, 0.1);
 border-radius: 9.63178px;
@@ -1400,6 +1519,20 @@ Logos
     margin-top: 70px;
     padding: 75px  0;
     border-top: 1px solid #E1E1E1;
+    position: relative;
+}
+.logos .container{
+    position: relative;
+}
+.logos .container::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #394149;
+    opacity: .3 ;
 }
 .logos ul{
     margin: 0;
@@ -1609,6 +1742,102 @@ text-align: center;
 
 color: #A0A0A0;
 }
+footer .footerbottom .col-12 .content a{
+    margin: 0;
+    padding: 0;
+    font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 16px;
+/* identical to box height */
+
+text-align: center;
+
+color: #A0A0A0;
+}
+/*---------------------------------------------------------------------
+Portfolio List Banner
+---------------------------------------------------------------------*/
+.portfoliolist.banner2{
+    background-image: url(../img/PortfolioListBg.png);
+}
+/*---------------------------------------------------------------------
+Services Main List
+---------------------------------------------------------------------*/
+.servicesmainlist{
+    padding: 80px 0;
+}
+.servicesmainlist .sectiontitle{
+    margin-bottom: 70px;
+}
+.servicesmainlist .cardcol .content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url(../img/ServiceCardBgImg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 55px 28px;
+}
+.servicesmainlist .cardcol .content .icondiv{
+    width: 80px;
+height: 80px;
+background: var(--color-4);
+box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+margin-bottom: 20px;
+
+}
+
+.servicesmainlist .cardcol .content .textdiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.servicesmainlist .cardcol .content .textdiv h3{
+    margin: 0;
+    padding: 0;
+    font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 24px;
+/* identical to box height */
+
+text-align: center;
+color: #3E3E3E;
+}
+.servicesmainlist .cardcol .content .textdiv p{
+    margin: 15px 0;
+    padding: 0;
+    font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 135%;
+/* or 19px */
+
+text-align: center;
+color: var(--color-1);
+}
+.servicesmainlist .cardcol .content .textdiv a{
+    margin: 0;
+    padding: 0;
+    font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 16px;
+text-align: center;
+color: var(--color-2);
+
+}
+.servicesmainlist .cardcol .content .textdiv a i{
+    margin-left: 8px;
+}
 /*---------------------------------------------------------------------
 Medias
 ---------------------------------------------------------------------*/
@@ -1763,6 +1992,9 @@ Medias
         display: flex;
         align-items: center;
         justify-content: flex-start;
+    }
+    footer{
+        padding-left: 10px;
     }
     footer .comunicate ul{
         flex-direction: column;
