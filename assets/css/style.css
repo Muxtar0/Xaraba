@@ -49,7 +49,11 @@ Global Css
     background: var(--color-4);
     color: var(--color-2);
 }
-
+.btnstyle-border{
+    background: transparent;
+    border: 1px solid var(--color-2);
+    color: var(--color-2);
+}
 .sectiontitle{
     display: flex;
     align-items: center;
@@ -57,11 +61,16 @@ Global Css
 }
 .sectiontitle .content {
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 .sectiontitle .content .bgicon{
     position: absolute;
-    top: -10%;
-    left: -20%;
+    top: -60%;
+    left: -25%;
+    z-index: -1;
 }
 .sectiontitle p.first{
     margin: 0;
@@ -75,9 +84,11 @@ line-height: 100%;
 text-align: center;
 
 color: var(--color-2);
+z-index: 100;
 }
 .sectiontitle h3{
     margin:10px  0;
+    display: inline-block   ;
     padding: 0;
     font-style: normal;
 font-weight: 500;
@@ -88,6 +99,9 @@ line-height: 100%;
 text-align: center;
 
 color: var(--color-1);
+z-index: 100;
+position: relative;
+
 }
 .sectiontitle p.second{
     margin: 0;
@@ -102,6 +116,8 @@ line-height: 30px;
 text-align: center;
 
 color: var(--color-1);
+z-index: 100;
+
 }
 /*---------------------------------------------------------------------
 Header
@@ -692,6 +708,339 @@ line-height: 25px;
 
 
 color: #8A8A8A;
+}
+/*---------------------------------------------------------------------
+Details
+---------------------------------------------------------------------*/
+
+.details .bgimg img{
+    width: 100%;
+    height: 100%;
+}
+.details .col-12{
+    position: relative;
+}
+.details .col-12 .content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.details .col-12 .content h2{
+    margin: 0;
+    padding: 0;
+    width: 774px;
+    font-style: normal;
+font-weight: 500;
+font-size: 50px;
+line-height: 59px;
+text-align: center;
+
+color: var(--color-4);
+}
+.details .col-12 .content p{
+    margin: 18px 0;
+    padding: 0;
+    font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 25px;
+/* or 156% */
+
+text-align: center;
+
+color: var(--color-4);
+}
+/*---------------------------------------------------------------------
+Projects
+---------------------------------------------------------------------*/
+.projects{
+    padding: 104px 0;
+}
+.projects .filtercategories{
+    margin-top: 20px;
+}
+.projects .filtercategories .content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.projects .filtercategories .content ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.projects .filtercategories .content ul li{
+    margin: 0 4.5px;
+}
+.projects .filtercategories .content ul li a{
+    padding: 0;
+    width: 160px;
+height: 40px;
+display: flex;
+align-items: center;
+justify-content: center;
+cursor: pointer;
+}
+.projects .itemsdiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+.projects .itemsdiv .item{
+    position: relative;
+    margin: 5px 9px;
+}
+.projects .itemsdiv .item.disabled{
+    display: none;
+}
+.projects .itemsdiv .itemlittle{
+    width: 25%;
+}
+.projects .itemsdiv .itembig{
+    width: 40%;
+}
+.projects .itemsdiv .item .imgdiv{
+    width: 100%;
+    height: 257px;
+    position: relative;
+}
+.projects .itemsdiv .item .imgdiv img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.projects .itemsdiv .item .imgdiv img.bglinear{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+.projects .itemsdiv .item .textdiv{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 12px 17px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.projects .itemsdiv .item .textdiv .left h3{
+    margin: 0;
+    padding: 0;
+    font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 25px;
+/* identical to box height, or 139% */
+
+
+color: var(--color-4);
+}
+.projects .itemsdiv .item .textdiv .left p{
+    margin: 0;
+    padding: 0;
+    font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 25px;
+/* identical to box height, or 156% */
+
+
+color: #C2C2C2;
+}
+.projects .itemsdiv .item .textdiv .right a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 33px;
+height: 33px;
+border: 0.5px solid rgba(255, 255, 255, 0.5);
+box-sizing: border-box;
+color: var(--color-4);
+transition: all 300ms;
+}
+.projects .itemsdiv .item .textdiv .right a:hover{
+    background: var(--color-4);
+    color: var(--color-2);
+    border-color: var(--color-4);
+}
+.projects .morebtncol{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 37px;
+} 
+.projects .morebtncol a{
+    width: 124px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/*---------------------------------------------------------------------
+History
+---------------------------------------------------------------------*/
+.history{
+    height: 268px;
+    background-image: url(../img/Historybg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.history .texts{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 8px;
+}
+.history .texts .item {
+    margin: 0 15px;
+}
+.history .texts .item h3{
+    margin: 0;
+    padding: 0;
+    font-style: normal;
+font-weight: 500;
+font-size: 30px;
+line-height: 45px;
+/* or 150% */
+text-align: center;
+
+color: var(--color-4);
+}
+.history .texts .item p{
+    margin: 0;
+    padding: 0;
+    font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 25px;
+/* or 139% */
+
+text-align: center;
+
+color: var(--color-4);
+}
+.history .historyimg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.history .historyimg img{
+    width: 100%;
+}
+/*---------------------------------------------------------------------
+Team Management
+---------------------------------------------------------------------*/
+.teammanagement{
+    padding: 65px 0;
+}
+.teammanagement .sectiontitle .bgicon{
+    left: -10%;
+}
+.teammanagement .teammemberscol{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+.teammanagement .teammemmberdiv{
+    width: 32%;
+    position: relative;
+    overflow: hidden;
+
+}
+.teammanagement .teammemmberdiv .imgdiv{
+    position: relative;
+}
+.teammanagement .teammemmberdiv .imgdiv img{
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+.teammanagement .teammemmberdiv .imgdiv img.bglinear{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+}
+.teammanagement .teammemmberdiv .textdiv{
+    position: absolute;
+    bottom: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-bottom: 17px;
+    transition: all 300ms;
+}
+.teammanagement .teammemmberdiv:hover .textdiv{
+    bottom: 0;
+}
+.teammanagement .teammemmberdiv .textdiv h3{
+    margin: 0;
+    padding: 0;
+    font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 25px;
+/* identical to box height, or 125% */
+
+text-align: center;
+
+color: var(--color-4);
+}
+.teammanagement .teammemmberdiv .textdiv p{
+    margin: 0;
+    padding: 0;
+    margin-top: 2px;
+    font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 25px;
+/* identical to box height, or 139% */
+
+text-align: center;
+
+color: var(--color-2);
+}
+.teammanagement .teammemmberdiv .textdiv .socialmedias{
+    margin-top: 10px;
+}
+.teammanagement .teammemmberdiv .textdiv .socialmedias ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.teammanagement .teammemmberdiv .textdiv .socialmedias ul li{
+    margin: 0 4.5px;
+}
+.teammanagement .teammemmberdiv .textdiv .socialmedias ul li a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36.02px;
+height: 36.02px;
+border-radius: 50%;
+background: var(--color-4);
+color: #393E46;
+transition: all 300ms;
+}
+.teammanagement .teammemmberdiv .textdiv .socialmedias ul li a:hover{
+    background: var(--color-2);
+    color: var(--color-4);
 }
 /*---------------------------------------------------------------------
 Medias
