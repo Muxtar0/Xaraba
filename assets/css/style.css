@@ -312,6 +312,12 @@ height: 6px;
 background: var(--color-4);
 border-radius: 50%;
 }
+.contactinputs{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
 .contactinputs input{
     border: none;
     outline: none;
@@ -365,6 +371,269 @@ line-height: 21px;
 
 
 color: #B4B4B4;
+}
+.contactinputs .btndiv{
+    margin-top: 20px;
+}
+.contactinputs .btndiv button{
+    width: 120px;
+}
+.postcomment h4,
+.comments h4{
+    margin: 0;
+    padding: 0;
+    margin: 54px 0;
+    font-style: normal;
+font-weight: 500;
+font-size: 40px;
+line-height: 47px;
+
+color: var(--color-1);
+position: relative;
+padding-left: 20px;
+}
+.postcomment .contactinputs input{
+    width: 49%;
+}
+.postcomment h4::before,
+.comments h4::before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 10px;
+height: 10px;
+background: var(--color-2);
+border-radius: 50%;
+}
+.comments .itemsdiv{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: column;
+}
+.comments .item{
+    display: flex;
+    align-items: flex-start;
+    background: #FFFFFF;
+box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
+border-radius: 10px;
+padding: 30px 17px;
+}
+.comments .item:not(:nth-child(1)){
+    margin-top: 30px;
+}
+.comments .item:nth-child(2){
+    width: 90%;
+}
+.comments .item .texts{
+    margin-left: 18px;
+}
+.comments .item .texts .top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.comments .item .texts .top .left h3{
+    margin: 0;
+    padding: 0;
+    font-style: normal;
+font-weight: 500;
+font-size: 18.9474px;
+line-height: 20px;
+/* identical to box height, or 105% */
+
+text-align: center;
+
+color: var(--color-2);
+}
+.comments .item .texts .top .left p{
+    margin: 0;
+    padding: 0;
+    margin-top: 5px;
+    font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 16px;
+
+color: #747474;
+}
+.comments .item .texts .top button{
+    background: transparent;
+    border: none;
+    outline: none;
+    font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 25px;
+/* identical to box height, or 156% */
+
+
+color: var(--color-2);
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.comments .item .texts .top button svg{
+    margin-right: 6px;
+}
+.comments .item .texts .comment{
+    margin-top: 10px;
+}
+.comments .item .texts .comment p{
+    margin: 0;
+    padding: 0;
+    font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 25px;
+/* or 156% */
+
+
+color: var(--color-1);
+}
+
+.kinds h4{
+    margin: 0;
+    padding: 0;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 180%;
+
+color: var(--color-1);
+position: relative;
+padding-left: 20px;
+margin-bottom: 20px;
+}
+
+.kinds h4::before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 10px;
+height: 10px;
+background: var(--color-2);
+border-radius: 50%;
+}
+.kinds .itemsdiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.kinds .itemsdiv .item{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 63px;
+    background: #FFFFFF;
+box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
+border-radius: 10px;
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 21px;
+
+color: var(--color-2);
+padding: 21px 28px;
+margin: 4px 0;
+transition: all 300ms;
+}
+.kinds .itemsdiv .item i{
+    margin-right: 13px;
+    transition: all 300ms;
+}
+.kinds .itemsdiv .item:hover{
+    background: var(--color-2);
+    color: var(--color-4);
+}
+.kinds .itemsdiv .item:hover i{
+    transform: rotate(-180deg);
+}
+.subscribe{
+    width: 100%;
+    height: 144px;
+    background: #FFFFFF;
+box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
+border-radius: 10px;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+padding: 27px 46px;
+margin-top: 27px;
+}
+.subscribe h4{
+    margin: 0;
+    padding: 0;
+    font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 100%;
+/* identical to box height, or 18px */
+
+text-align: center;
+
+color: var(--color-1);
+}
+.subscribe .emaildiv{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 52px;
+    background: #F7F7F6;
+border-radius: 5px;
+margin-top: 20px;
+}
+.subscribe .emaildiv input{
+    padding: 0 14px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 100%;
+/* identical to box height, or 16px */
+
+
+color: #B4B4B4;
+}
+.subscribe .emaildiv input::placeholder{
+    font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 100%;
+/* identical to box height, or 16px */
+
+
+color: #B4B4B4;
+}
+.subscribe .emaildiv button{
+    border: none;
+    outline: none;
+    height: 100%;
+    width: 90px;
+    background: #AD2F2F;
+border-radius: 0px 5px 5px 0px;
+color: var(--color-4);
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 25px;
+/* or 156% */
+
+
+color: var(--color-4);
+transition: all 300ms;
+}
+.subscribe .emaildiv button:hover{
+    background: transparent;
+    color: var(--color-2);
 }
 /*---------------------------------------------------------------------
 Video Popup
@@ -2501,8 +2770,231 @@ line-height: 25px;
 color: #424242;
 }
 /*---------------------------------------------------------------------
+Blog Detail Div
+---------------------------------------------------------------------*/
+.blogdetail{
+    padding-top: 100px;
+    padding-bottom: 80px;
+}
+.blogdetaildiv .imgdiv .commentcount{
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+.blogdetaildiv .imgdiv .commentcount p{
+    margin: 0;
+    padding: 0;
+    font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 16px;
+
+color: #747474;
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
+.blogdetaildiv .imgdiv .commentcount p:nth-child(2){
+    margin-left: 9px;
+}
+.blogdetaildiv .imgdiv .commentcount p i{
+    color: var(--color-2);
+}
+.blogdetaildiv .imgdiv .commentcount p i,
+.blogdetaildiv .imgdiv .commentcount p svg{
+    margin-right: 9px;
+}
+.blogdetaildiv h2{
+    margin: 0;
+    padding: 0;
+    margin-bottom: 18px;
+    font-style: normal;
+font-weight: 500;
+font-size: 40px;
+line-height: 47px;
+
+color: var(--color-1);
+}
+.blogdetaildiv p{
+    margin: 0;
+    padding: 0;
+    margin-top: 18px;
+    font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 25px;
+/* or 156% */
+
+
+color: var(--color-1);
+}
+
+/*---------------------------------------------------------------------
+Portfolio Detail 
+---------------------------------------------------------------------*/
+.porfoliodetail{
+    padding-top: 100px;
+    padding-bottom: 80px;
+}
+.porfoliodetail .blogdetaildiv .imgdiv img{
+    width: 100%;
+}
+.blogdetaildiv .imgdiv .commentcount{
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+.blogdetaildiv .imgdiv .commentcount p{
+    margin: 0;
+    padding: 0;
+    font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 16px;
+
+color: #747474;
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
+.blogdetaildiv .imgdiv .commentcount p:nth-child(2){
+    margin-left: 9px;
+}
+.blogdetaildiv .imgdiv .commentcount p i{
+    color: var(--color-2);
+}
+.blogdetaildiv .imgdiv .commentcount p i,
+.blogdetaildiv .imgdiv .commentcount p svg{
+    margin-right: 9px;
+}
+.blogdetaildiv h2{
+    margin: 0;
+    padding: 0;
+    margin-bottom: 18px;
+    font-style: normal;
+font-weight: 500;
+font-size: 40px;
+line-height: 47px;
+
+color: var(--color-1);
+}
+.blogdetaildiv p{
+    margin: 0;
+    padding: 0;
+    margin-top: 18px;
+    font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 25px;
+/* or 156% */
+
+
+color: var(--color-1);
+}
+.porfoliodetail .blogdetaildiv p{
+    margin-bottom: 15px;
+}
+
+
+
+.porfoliodetail .projectdetails > h3{
+    margin: 0;
+    padding: 0;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 180%;
+    /* identical to box height, or 54px */
+    
+    
+
+color: var(--color-1);
+position: relative;
+padding-left: 20px;
+margin-bottom: 27px;
+}
+
+.porfoliodetail .projectdetails > h3::before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 10px;
+height: 10px;
+background: var(--color-2);
+border-radius: 50%;
+}
+.porfoliodetail .projectdetails .item{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 16px 0;
+}
+.porfoliodetail .projectdetails .item h3,
+.porfoliodetail .projectdetails .item p{
+    margin: 0;
+    padding: 0;
+}
+.porfoliodetail .projectdetails .item h3{
+    font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 21px;
+
+color: var(--color-1);
+}
+.porfoliodetail .projectdetails .item p{
+    font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 21px;
+
+color: var(--color-2);
+}
+.porfoliodetail .searcdiv{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #F9F9F9;
+border-radius: 10px;
+width: 100%;
+height: 63px;
+margin: 33px 0;
+}
+.porfoliodetail .searcdiv input{
+    width: 100%;
+    padding: 0 15px;
+    background: transparent;
+    border: none;
+    outline: none;
+}
+.porfoliodetail .searcdiv button{
+    border: none;
+    outline: none;
+    
+    height: 100%;
+    width: 30%;
+    background: var(--color-2);
+border-radius: 0px 10px 10px 0px;
+display: flex;
+align-items: center;
+justify-content: center;
+color: var(--color-4);
+}
+/*---------------------------------------------------------------------
 Medias
 ---------------------------------------------------------------------*/
+@media (min-width: 1200px){
+    .blogdetail .container{
+        max-width: 986px;
+    }
+}
 @media (max-width:992px) {
     header .dekstopnav{
         display: none;
