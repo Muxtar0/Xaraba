@@ -1,7 +1,50 @@
+/*
+Template Name: LEYL
+Version: 1.0
+Author: theme4you.com
+Description: Portfolio Template
+
+[TABLE OF CONTENTS]
+01.Reset
+02.Root
+03.Global Css
+04.Video Popup
+05.Header
+06.Dekstop Nav
+07.MobileNav
+08.Mobile Open Menu
+09.Banner Main
+10.Story
+11.Services
+12.About
+13.Details
+14.Projects
+15.History
+16.Team Menegement 
+17.Testimonital
+18.Latest New
+19.Logos
+20.Portfolio List Banner
+21.Services main List
+22.contactusmaindiv1
+23.contactusmaindiv2
+24.contactusmaindiv3
+25.Blog List
+26.About Us
+27.Experience
+28.Blog Detail Div
+29.Portfolio Detail
+30.Sevice Detail
+31.Footer
+32.Medias
+
+
+
+*/
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 /*---------------------------------------------------------------------
-Reset Css
+Reset
 ---------------------------------------------------------------------*/
 *{
     margin: 0;
@@ -1678,7 +1721,7 @@ color: var(--color-4);
     width: 100%;
 }
 /*---------------------------------------------------------------------
-Team Management
+Team Menegement 
 ---------------------------------------------------------------------*/
 .teammanagement{
     padding: 65px 0;
@@ -2045,220 +2088,7 @@ Logos
     align-items: center;
     justify-content: space-between;
 }
-/*---------------------------------------------------------------------
-Footer
----------------------------------------------------------------------*/
-footer{
-    background: var(--color-1);
-}
-footer .footertop{
-    padding: 55px 0;
-}
-footer .footertop .leftcol p{
-    margin: 20px 0;
-    padding: 0;
-    font-style: normal;
-font-weight: normal;
-font-size: 16px;
-line-height: 25px;
-/* or 156% */
 
-
-color: var(--color-4);
-}
-footer .footertop .leftcol .socialmedias ul{
-    margin: 0;
-    padding: 0;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-}
-footer .footertop .leftcol .socialmedias ul li{
-    margin-right: 12px;
-}
-footer .footertop .leftcol .socialmedias ul li a{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 30px;
-height: 30px;
-background: var(--color-2);
-color: var(--color-4);
-border-radius: 50%;
-font-size: 14px;
-transition: all 300ms;
-}
-footer .footertop .leftcol .socialmedias ul li a:hover{
-    background: var(--color-4);
-    color: var(--color-2);
-}
-footer .footertop .middlecol h3{
-    margin: 0;
-    padding: 0;
-    font-style: normal;
-font-weight: 500;
-font-size: 20px;
-line-height: 23px;
-
-color: var(--color-4);
-}
-footer .footertop .middlecol ul{
-    margin: 0;
-    padding: 0;
-    margin-top: 12px;
-}
-footer .footertop .middlecol ul li{
-    margin: 8px 0;
-    transition: all 300ms;
-transform: translateX(0);
-
-}
-footer .footertop .middlecol ul li:hover{
-    transform: translateX(10px);
-}
-footer .footertop .middlecol ul li a{
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    width: 100%;
-    font-style: normal;
-font-weight: normal;
-font-size: 16px;
-line-height: 19px;
-/* identical to box height */
-
-
-color: var(--color-4);
-transition: all 300ms;
-}
-
-footer .footertop .middlecol ul li a i{
-    margin-right: 5px;
-}
-footer .footertop .rightcol h3{
-    margin: 0;
-    padding: 0;
-    font-style: normal;
-font-weight: 500;
-font-size: 20px;
-line-height: 23px;
-
-color: var(--color-4);
-}
-footer .footertop .rightcol p{
-    margin: 8px 0;
-    padding: 0;
-    font-style: normal;
-font-weight: normal;
-font-size: 16px;
-line-height: 19px;
-
-color: #A7A7A7; 
-}
-footer .footertop .rightcol .emaildiv{
-    width: 229px;
-    height: 47px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: var(--color-4);
-border-radius: 5px;
-}
-footer .footertop .rightcol .emaildiv input{
-    width: 162px;
-    height: 100%;
-    background: transparent;
-    border: none;
-    outline: none;
-    padding: 11px;
-    font-style: normal;
-font-weight: normal;
-font-size: 16px;
-line-height: 19px;
-/* identical to box height */
-
-
-color: var(--color-3);
-}
-footer .footertop .rightcol .emaildiv button{
-    border: none;
-    outline: none;
-    width: 67px;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: var(--color-2);
-    border-radius: 0px 5px 5px 0px;
-    font-style: normal;
-font-weight: normal;
-font-size: 16px;
-line-height: 19px;
-/* identical to box height */
-
-
-color: var(--color-4);
-transition: all 300ms;
-transform: translateX(1px);
-}
-footer .footertop .rightcol .emaildiv button:hover{
-    background: var(--color-4);
-    color: var(--color-2);
-}
-footer .comunicate{
-    padding: 18px 0;
-    border-top: 1px solid #646464;
-}
-footer .comunicate ul{
-    margin: 0;
-    padding: 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-}
-footer .comunicate ul li{
-    font-style: normal;
-font-weight: 500;
-font-size: 14px;
-line-height: 16px;
-
-color: #A0A0A0;
-}
-footer .footerbottomfullcon{
-    background: #414141;
-    padding: 13px 0;
-}
-footer .footerbottom .col-12 .content{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-footer .footerbottom .col-12 .content p{
-    margin: 0;
-    padding: 0;
-    font-style: normal;
-font-weight: normal;
-font-size: 14px;
-line-height: 16px;
-/* identical to box height */
-
-text-align: center;
-
-color: #A0A0A0;
-}
-footer .footerbottom .col-12 .content a{
-    margin: 0;
-    padding: 0;
-    font-style: normal;
-font-weight: normal;
-font-size: 14px;
-line-height: 16px;
-/* identical to box height */
-
-text-align: center;
-
-color: #A0A0A0;
-}
 /*---------------------------------------------------------------------
 Portfolio List Banner
 ---------------------------------------------------------------------*/
@@ -3249,6 +3079,220 @@ line-height: 22px;
 
 
 color: var(--color-1);
+}
+/*---------------------------------------------------------------------
+Footer
+---------------------------------------------------------------------*/
+footer{
+    background: var(--color-1);
+}
+footer .footertop{
+    padding: 55px 0;
+}
+footer .footertop .leftcol p{
+    margin: 20px 0;
+    padding: 0;
+    font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 25px;
+/* or 156% */
+
+
+color: var(--color-4);
+}
+footer .footertop .leftcol .socialmedias ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+footer .footertop .leftcol .socialmedias ul li{
+    margin-right: 12px;
+}
+footer .footertop .leftcol .socialmedias ul li a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+height: 30px;
+background: var(--color-2);
+color: var(--color-4);
+border-radius: 50%;
+font-size: 14px;
+transition: all 300ms;
+}
+footer .footertop .leftcol .socialmedias ul li a:hover{
+    background: var(--color-4);
+    color: var(--color-2);
+}
+footer .footertop .middlecol h3{
+    margin: 0;
+    padding: 0;
+    font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 23px;
+
+color: var(--color-4);
+}
+footer .footertop .middlecol ul{
+    margin: 0;
+    padding: 0;
+    margin-top: 12px;
+}
+footer .footertop .middlecol ul li{
+    margin: 8px 0;
+    transition: all 300ms;
+transform: translateX(0);
+
+}
+footer .footertop .middlecol ul li:hover{
+    transform: translateX(10px);
+}
+footer .footertop .middlecol ul li a{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 19px;
+/* identical to box height */
+
+
+color: var(--color-4);
+transition: all 300ms;
+}
+
+footer .footertop .middlecol ul li a i{
+    margin-right: 5px;
+}
+footer .footertop .rightcol h3{
+    margin: 0;
+    padding: 0;
+    font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 23px;
+
+color: var(--color-4);
+}
+footer .footertop .rightcol p{
+    margin: 8px 0;
+    padding: 0;
+    font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 19px;
+
+color: #A7A7A7; 
+}
+footer .footertop .rightcol .emaildiv{
+    width: 229px;
+    height: 47px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--color-4);
+border-radius: 5px;
+}
+footer .footertop .rightcol .emaildiv input{
+    width: 162px;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    padding: 11px;
+    font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 19px;
+/* identical to box height */
+
+
+color: var(--color-3);
+}
+footer .footertop .rightcol .emaildiv button{
+    border: none;
+    outline: none;
+    width: 67px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--color-2);
+    border-radius: 0px 5px 5px 0px;
+    font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 19px;
+/* identical to box height */
+
+
+color: var(--color-4);
+transition: all 300ms;
+transform: translateX(1px);
+}
+footer .footertop .rightcol .emaildiv button:hover{
+    background: var(--color-4);
+    color: var(--color-2);
+}
+footer .comunicate{
+    padding: 18px 0;
+    border-top: 1px solid #646464;
+}
+footer .comunicate ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+footer .comunicate ul li{
+    font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 16px;
+
+color: #A0A0A0;
+}
+footer .footerbottomfullcon{
+    background: #414141;
+    padding: 13px 0;
+}
+footer .footerbottom .col-12 .content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+footer .footerbottom .col-12 .content p{
+    margin: 0;
+    padding: 0;
+    font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 16px;
+/* identical to box height */
+
+text-align: center;
+
+color: #A0A0A0;
+}
+footer .footerbottom .col-12 .content a{
+    margin: 0;
+    padding: 0;
+    font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 16px;
+/* identical to box height */
+
+text-align: center;
+
+color: #A0A0A0;
 }
 /*---------------------------------------------------------------------
 Medias
