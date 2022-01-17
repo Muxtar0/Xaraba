@@ -809,7 +809,10 @@ Dekstop Nav
     font-size: 14px;
     margin-left: 7px;
 }
-.dekstopnav .dekstopnavcol .nav-list > ul > li.active > a::before{
+.dekstopnav .dekstopnavcol .nav-list > ul > li.active > a span{
+    position: relative;
+}
+.dekstopnav .dekstopnavcol .nav-list > ul > li.active > a span::before{
     content: "";
     position: absolute;
     bottom: -50%;
@@ -821,7 +824,7 @@ Dekstop Nav
     background: var(--color-1);
     transition: all 300ms;
 }
-.dekstopnav .dekstopnavcol .nav-list > ul > li.active > a::before{
+.dekstopnav .dekstopnavcol .nav-list > ul > li.active > a span::before{
     background: var(--color-2);
 }
 .dekstopnav .dekstopnavcol .nav-list > ul > li.active > a{
@@ -949,7 +952,10 @@ Mobile Open Menu
     font-size: 14px;
     margin-left: 7px;
 }
-.mobileopenmenu .nav-list > ul > li.active > a::before{
+.mobileopenmenu .nav-list > ul > li > a span{
+    position: relative;
+}
+.mobileopenmenu .nav-list > ul > li.active > a span::before{
     content: "";
     position: absolute;
     bottom: -50%;
@@ -961,7 +967,7 @@ Mobile Open Menu
     background: var(--color-1);
     transition: all 300ms;
 }
-.mobileopenmenu .nav-list > ul > li.active > a::before{
+.mobileopenmenu .nav-list > ul > li.active > a span::before{
     background: var(--color-2);
 }
 .mobileopenmenu .nav-list > ul > li.active > a{
@@ -1150,7 +1156,7 @@ Story
     margin: 0 6px;
 }
 .banner .story .content ul li .top{
-    position: relative;
+    position: relative; 
     overflow: hidden;
     padding: 4px;
     border: 2px solid var(--color-2);
@@ -1180,8 +1186,17 @@ Story
     transform: translate(-50%,-50%);
 }
 .banner .story .content ul li .text p{
+    font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 19px;
+/* identical to box height */
+
+
+color: var(--color-3);
     text-align: center;
     margin: 0;
+    margin-top: 6px;
 }
 /*---------------------------------------------------------------------
 Services
@@ -2071,24 +2086,51 @@ Logos
 .logos .container{
     position: relative;
 }
-.logos .container::before{
+.logos img{ filter: opacity(50%); }
+/* .logos::before{
     content: "";
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: #394149;
+    background: #9CA0A4;
     opacity: .3 ;
-}
-.logos ul{
+} */
+.logos ul{  
     margin: 0;
     padding: 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+.logos h3{
+    margin: 0;
+    padding: 0;
+    font-style: normal;
+font-weight: 500;
+font-size: 40px;
+line-height: 100%;
+/* identical to box height, or 40px */
 
+
+color: #9CA0A4;
+
+}
+.logos p{
+    margin: 0;
+    padding: 0;
+    font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 25px;
+/* or 156% */
+
+
+color: #9CA0A4;
+margin-top: 8px;
+margin-bottom: 40px;
+}
 /*---------------------------------------------------------------------
 Portfolio List Banner
 ---------------------------------------------------------------------*/
