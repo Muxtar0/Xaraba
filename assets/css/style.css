@@ -3708,6 +3708,15 @@ Medias
     .servicedetaildiv .bottomcon .item:nth-child(2){
         margin-top: 20px;
     }
+    .teammanagement .sectiontitle h3{
+        text-align: center;
+    }
+    .teammanagement .sectiontitle .bgicon{
+        left: 0px;
+    }
+    .history .texts .item:last-child{
+        margin: 5px auto;
+    }
     footer .comunicate ul li{
         margin: 8px 0;
     }
@@ -3720,5 +3729,11 @@ Medias
     }
     footer .footerbottomfullcon  .col-12{
         padding: 0 ;
+    }
+}
+@media (max-width:387px){
+    .teammanagement .sectiontitle .bgicon{
+        left: 70px;
+        top: 0;
     }
 }
