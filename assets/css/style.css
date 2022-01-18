@@ -3034,7 +3034,7 @@ About Us
     color: var(--color-3);
 }
 
-.offercon .leftcol .content .bottomcon h3 div {
+.offercon .leftcol .content .bottomcon h3 .svgdiv {
     width: 35px;
     height: 35px;
     display: flex;
@@ -3470,7 +3470,7 @@ Service Detail
     color: var(--color-3);
 }
 
-.servicedetaildiv .bottomcon h3 div {
+.servicedetaildiv .bottomcon h3 .svgdiv {
     width: 35px;
     height: 35px;
     display: flex;
@@ -3618,6 +3618,7 @@ footer .footertop .rightcol .emaildiv {
     justify-content: center;
     background: var(--color-4);
     border-radius: 5px;
+    margin-top: 10px;
 }
 
 footer .footertop .rightcol .emaildiv input {
@@ -3631,16 +3632,14 @@ footer .footertop .rightcol .emaildiv input {
     font-weight: normal;
     font-size: 16px;
     line-height: 19px;
-    /* identical to box height */
-    color: var(--color-3);
+    color: #A7A7A7;
 }
 footer .footertop .rightcol .emaildiv input::placeholder{
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
     line-height: 19px;
-    /* identical to box height */
-    color: var(--color-1);
+    color: #A7A7A7;
 }
 footer .footertop .rightcol .emaildiv button{
     border: none;
