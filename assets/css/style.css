@@ -1543,7 +1543,9 @@ About
     color: var(--color-1);
     width: 50%;
 }
-
+.about .maincontentcolleft .content .item .icon i{
+    font-size: 30px;
+}
 .about .maincontentcolleft .content .item.item2 {
     margin-top: 10px;
 }
