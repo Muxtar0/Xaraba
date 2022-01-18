@@ -383,13 +383,12 @@ z-index: 100;
 position: relative;
 }
 .banner2 p span{
-    visibility: hidden;
-    opacity: 0;
+    margin-left: 28px;
 }
 .banner2 p::before{
     content: "";
     position: absolute;
-    left: 60px;
+    left: 57px;
     top: 50%;
     transform: translateY(-50%);
     width: 6px;
@@ -467,10 +466,10 @@ color: #B4B4B4;
 .comments h4{
     margin: 0;
     padding: 0;
-    margin: 54px 0;
+    margin: 30px 0;
     font-style: normal;
 font-weight: 500;
-font-size: 40px;
+font-size: 30px;
 line-height: 47px;
 
 color: var(--color-1);
@@ -544,7 +543,8 @@ line-height: 16px;
 
 color: #747474;
 }
-.comments .item .texts .top button{
+.comments .item .texts .top button,
+.comments .item .texts .top a{
     background: transparent;
     border: none;
     outline: none;
@@ -1131,7 +1131,10 @@ margin: 0 4px;
     transform: translate(-50%,-50%);
     z-index: 100;
 }
-.banner .bannermaincon .bannertext h1{
+.banner .bannermaincon .bannertext h1,
+.banner .bannermaincon .bannertext h2,
+.banner .bannermaincon .bannertext h3,
+.banner .bannermaincon .bannertext h4{
     margin: 0;
     padding: 0;
     font-style: normal;
@@ -2066,13 +2069,21 @@ color: #747474;
 .latestnew .content .textdiv .top p:nth-child(2){
     margin-left: 7px;
 }
+.latestnew .content .textdiv .top p{
+    display: flex;
+    align-items: center;
+}
 .latestnew .content .textdiv .top p i{
     color: var(--color-2);
     font-size: 16px;
 }
 .latestnew .content .textdiv .top p i,
-.latestnew .content .textdiv .top p svg{
+.latestnew .content .textdiv .top p svg,
+.latestnew .content .textdiv .top p img{
     margin-right: 7px;
+}
+.latestnew .content .textdiv .top p img{
+    width: 15px;
 }
 .latestnew .content .textdiv .maintext{
     margin-top: 14px;
@@ -2907,7 +2918,8 @@ justify-content: center;
 .blogdetaildiv .imgdiv .commentcount p svg{
     margin-right: 9px;
 }
-.blogdetaildiv h2{
+.blogdetaildiv h2,
+.blogdetaildiv h1{
     margin: 0;
     padding: 0;
     margin-bottom: 18px;
@@ -3297,6 +3309,14 @@ line-height: 19px;
 
 
 color: var(--color-3);
+}
+footer .footertop .rightcol .emaildiv input::placeholder{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    /* identical to box height */
+    color: var(--color-1);
 }
 footer .footertop .rightcol .emaildiv button{
     border: none;
