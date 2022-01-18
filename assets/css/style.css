@@ -128,7 +128,12 @@ Root
 /*---------------------------------------------------------------------
 Global Css
 ---------------------------------------------------------------------*/
-
+.contactusmaindiv1 .right .item i,
+.contactusmaindiv3 .right .item i,
+.contactitemsdiv .item i{
+    color: var(--color-2);
+    font-size: 30px;
+}
 .porfoliodetail .rightdiv,
 .servicedetail .rightdiv {
     padding-left: 20px;
@@ -1496,11 +1501,13 @@ About
     padding: 0;
     font-style: normal;
     font-weight: 500;
-    font-size: 40px;
-    line-height: 45px;
-    /* or 112% */
-    width: 334px;
-    color: var(--color-1);
+    font-size: 18px;
+    line-height: 25px;
+    /* or 139% */
+    
+    
+    color:var(--color-1);
+    margin: 8px 0;
 }
 
 .about .maincontentcolleft .content p {
@@ -3014,7 +3021,9 @@ About Us
 .offercon .leftcol .content .sectiontitle .content p {
     text-align: start;
 }
-
+.offercon .leftcol .content .bottomcon .item:nth-child(2){
+    margin-left: 20px;
+}
 .offercon .leftcol .content .bottomcon {
     display: flex;
     align-items: center;
@@ -3043,7 +3052,10 @@ About Us
     border-radius: 5px;
     margin-right: 9px;
 }
-
+.offercon .leftcol .content .bottomcon h3 .svgdiv i{
+    color: var(--color-2);
+    font-size: 20px;
+}
 .offercon .leftcol .content .bottomcon p {
     margin: 0;
     padding: 0;
@@ -3232,11 +3244,15 @@ Blog Detail Div
     margin-bottom: 18px;
     font-style: normal;
     font-weight: 500;
-    font-size: 40px;
     line-height: 47px;
     color: var(--color-1);
 }
-
+.blogdetaildiv h1{
+    font-size: 40px;
+}
+.blogdetaildiv h2{
+    font-size: 35px;
+}
 .blogdetaildiv p {
     margin: 0;
     padding: 0;
@@ -3302,7 +3318,7 @@ Portfolio Detail
     margin-bottom: 18px;
     font-style: normal;
     font-weight: 500;
-    font-size: 40px;
+    font-size: 35px;
     line-height: 47px;
     color: var(--color-1);
 }
@@ -3396,8 +3412,21 @@ Portfolio Detail
     background: transparent;
     border: none;
     outline: none;
-}
+    font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 21px;
 
+color: #A0A0A0;
+}
+.porfoliodetail .searcdiv input::placeholder{
+    font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 21px;
+
+color: #A0A0A0;
+}
 .porfoliodetail .searcdiv button {
     border: none;
     outline: none;
@@ -3457,7 +3486,9 @@ Service Detail
     margin-top: 50px;
     margin-bottom: 24px;
 }
-
+.servicedetaildiv .bottomcon .item:nth-child(2){
+    margin-left: 20px;
+}
 .servicedetaildiv .bottomcon h3 {
     display: flex;
     align-items: center;
@@ -4100,6 +4131,12 @@ Medias
     }
     .history .texts .item:last-child {
         margin: 5px auto;
+    }
+    .servicedetaildiv .bottomcon .item:nth-child(2){
+        margin-left: 0px;
+    }
+    .offercon .leftcol .content .bottomcon .item:nth-child(2){
+        margin-left: 0;
     }
     footer .comunicate ul li {
         margin: 8px 0;
