@@ -3210,13 +3210,21 @@ Blog Detail Div
     margin-left: 9px;
 }
 
+.blogdetaildiv .imgdiv .commentcount p{
+    display: flex;
+    align-items: center;
+}
 .blogdetaildiv .imgdiv .commentcount p i {
     color: var(--color-2);
 }
 
 .blogdetaildiv .imgdiv .commentcount p i,
-.blogdetaildiv .imgdiv .commentcount p svg {
+.blogdetaildiv .imgdiv .commentcount p svg,
+.blogdetaildiv .imgdiv .commentcount p img {
     margin-right: 9px;
+}
+.blogdetaildiv .imgdiv .commentcount p img{
+    width: 15px;
 }
 .blogdetaildiv h2,
 .blogdetaildiv h1{
