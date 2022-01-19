@@ -3788,7 +3788,7 @@ Medias
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        width: 100%;
+        width: 100% !important;
         margin-top: 20px;
     }
     .contactusmaindiv1 .contactinputs input {
@@ -3856,7 +3856,8 @@ Medias
     .banner .bannermaincon .bannertext {
         width: 100%;
     }
-    .banner .bannermaincon .bannertext h1 {
+    .banner .bannermaincon .bannertext h1,
+    .banner .bannermaincon .bannertext h2 {
         width: 100%;
         font-size: 40px;
     }
